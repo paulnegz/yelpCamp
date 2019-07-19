@@ -37,8 +37,8 @@ passport.use(new LocalStrategy(user.authenticate()));
 passport.serializeUser(user.serializeUser());
 passport.deserializeUser(user.deserializeUser());
 
-
-mongoose.connect('mongodb://localhost/yelp_camp',{
+// mongoose.connect('mongodb://localhost/yelp_camp',{
+mongoose.connect('mongodb+srv://paulnegz:sKullcandiEs8991!@cluster0-6p1ed.mongodb.net/test?retryWrites=true&w=majority',{
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() =>{
